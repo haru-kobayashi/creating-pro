@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+
+html{
+    font-size: 100%;
+}
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+li{
+    list-style: none;
+}
+
+
+.tell-box{
+    width: 70vw;
+    align-items: center;
+}
+
+.section-box{
+    margin-top: 105px;
+}
+.sub-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-title h2{
+    justify-content: center;
+    align-items: center;
+}
+.sub-comment__box{
+    margin-top: 5rem;
+    text-align: center;
+}
+.sub-comment{
+    font-size: 20px;
+    background-color: #9CDEFD;
+    padding: 33px 0;
+    margin-bottom: 0;
+}
+.sub-comment__white{
+    font-size: 20px;
+    background-color: #fff;
+    padding: 33px 0;
+    margin-bottom: 0;
+}
+.arrow-inside{
+    text-align: center;
+}
+.ale-illust{
+    display: flex;
+    justify-content: center;
+}
+
+/* ヘッダーエリア */
+
+.page-header{
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo img{
+    width: 267px;
+    padding-top: 28px;
+}
+.header-nav ul{
+    display: flex;
+}
+.header-nav li{
+    padding-left: 50px;
+}
+.header-nav img{
+    width: 98px;
+}
+
+/* メインビューエリア */
+
+#main-view{
+    background-image: url(../images/header.png);
+    height: 70vh;
+    background-size: cover;
+    background-position: center top;
+}
+
+
+/* スクール特徴エリア */
+.features-lessons{
+    display: flex;
+    justify-content: space-between;
+}
+.lesson img{
+    width: 80%;
+}
+
+
+/* troubleエリア */
+.trouble{
+    background-color: #9CDEFD;
+}
+.trouble .sub-title{
+    padding-top: 120px;
+}
+.trouble-items{
+    display: flex;
+    margin-top: 110px;
+}
+.trouble-item{
+    justify-content: space-between;
+}
+.trouble-item img{
+    width: 85%;
+}
+.item-dwon{
+    margin: 2rem 0 80px;
+}
+
+
+
+/* solutionエリア */
+.solution{
+    background-color: #F4F6FC;
+}
+.solution-content__box{
+    padding-top: 265px;
+}
+.solution-content{
+    display: flex;
+    justify-content: space-between;
+}
+.solucon02{
+    margin-top: 4rem;
+}
+.solucon03{
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+}
+.solution-content__text h3{
+    width: 80%;
+}
+.solution-content__text p{
+    font-size: 20px;
+}
+.solution-content__img img{
+    width: 85%;
+}
+
+
+/* skill-contentエリア */
+.skill-contents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+.skill-contents img{
+    width: 23%;
+    padding-bottom: 1rem;
+}
+
+
+/* 無料体験エリア */
+#taiken-content{
+    background-image: url(../images/taiken-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 565px;
+    margin-top: 1rem;
+}
+#taiken-tellbox{
+    margin-top: 6rem;
+}
+
+
+/* teachersエリア */
+.teacher-contents{
+    background-color: #F4F6FC;
+
+}
+.teacher-contents__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 140px;
+    padding-bottom: 130px;
+}
+.teacher-contents__box img{
+    padding-bottom: 2rem;
+}
+
+/* studentエリア */
+.student-section{
+    background-color: #FFF2B2;
+}
+
+.student-contents{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+.student-down{
+    padding-top: 30px;
+}
+
+.student-contents__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.student-face{
+    width: 85%;
+}
+.student-name{
+    padding-top: 30px;
+    width: 200px;
+}
+.student-contents__box p{
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+
+/* 最後あなたらしい働き方を応援しますエリア */
+.last-greeting{
+    margin-bottom: 35px;
+}
+
+#last-tellbox{
+    margin-top: 55px;
+}
+
+
+/* footerエリア */
+footer{
+    height: 210px;
+    background-color: #9CDEFD;
+}
+
+.footer-box{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-box img{
+    width: 56px;
+    margin-top: 77px;
+}
