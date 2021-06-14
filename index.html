@@ -7,8 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -21,21 +23,36 @@
         </h1>
         <nav class="header-nav">
             <ul>
-                <li>
-                    <a href="#"><img src="images/header-icon siryou.png" alt="資料請求"></a>
+                <li class="header-button">
+                    <a href="#"><i class="fas fa-file-alt header-button__icon"></i>資料請求</a>
                 </li>
-                <li>
-                    <a href="#"><img src="images/header-icon otoiawase.png" alt="お問い合わせ"></a>
+                <li class="header-button">
+                    <a href="#"><i class="fas fa-mail-bulk header-button__icon"></i>お問い合わせ</a>
                 </li>
             </ul>
+        </nav>
+        <nav class="header-nav__tublet">
+            <a href="#"><img src="images/header-menu-humbergar.png" alt="ハンバーガーメニュー"></a>
         </nav>
     </header>
     <section class="main">
         <div id="main-view">
-            <div class="mv"></div>
+            <div class="mv">
+                <img class="mv-title" src="images/main-title.png" alt="あなたらしく働くために">
+                <img class="mv-subtitle" src="images/sub-title.png" alt="未経験でも大丈夫！">
+                <img class="mv-p" src="images/mv-p.png" alt="説明">
+            </div>
         </div>
         <div id="main-tellbox" class="tell-box container">
-            <img src="images/tell.png" alt="お問い合わせ先">
+            <div class="tell-box__button">
+                <a href="#"><img src="images/shiryou-button.png" alt="今すぐ資料請求"></a>
+                <a href="#"><img src="images/toiawase-button.png" alt="メールでお問い合わせ"></a>
+            </div>
+            <div class="tell-box__text">
+                <p class="tell-number__descriptiom">お気軽にお問い合わせください</p>
+                <p class="tell-number"><i class="fas fa-phone-volume fa-fw"></i>0120-123-456</p>
+                <p class="tell-number__descriptiom">（平日10:00~18:00）</p>
+            </div>
         </div>
     </section>
 
@@ -43,9 +60,12 @@
             <h2 class="sub-title container">
                 <img src="images/subtitle-01.png" alt="あなたの働き方を応援します">
             </h2>
+            <h2 class="sub-title__tublet">
+                <img src="images/subtitle01-tublet.png" alt="あなたの働き方を応援します小">
+            </h2>
         <div class="sub-comment__box">
             <p class="sub-comment">
-                デザイン・コーディングの基礎から、実践的な課題の制作まで行います。<br> また、卒業までに、副業・フリーランスとして開業できるよう、安心サポートつきです！
+                デザイン・コーディングの基礎から、実践的な課題の制作まで行います。<br> また、卒業までに、副業・フリーランスとして開業できるよう、安心サポートつき！
             </p>
             <img src="images/hukidashi-arrow.png" alt="吹き出し部分">
         </div>
@@ -82,36 +102,50 @@
                         <img src="images/2-03 schoolha....png" alt="スクールは高額で踏み出せない">
                     </div>
                 </div>
+                <!-- タブレット -->
+                <h2 class="sub-title__tublet">
+                    <img src="images/tublet-subtitle02nayami.png" alt="こんな悩みを持った方にオススメです２">
+                </h2>
+                <div class="trouble-items__tublet">
+                    <img src="images/tublet-nayami01.png" alt="途中で挫折してしまった２">
+                    <img src="images/tublet-nayami02.png" alt="コーディングを一緒に学ぶやり方がわからない２">
+                    <img src="images/tublet-nayami03.png" alt="スクールは高額で踏み出せない2">
+                </div>
+                <div class="trouble-items__sumaho">
+                    <img src="images/sumaho-nayami01.png" alt="途中で挫折してしまった３">
+                    <img src="images/sumaho-nayami02.png" alt="コーディングを一緒に学ぶやり方がわからない３">
+                    <img src="images/sumaho-nayami03.png" alt="スクールは高額で踏み出せない３">
+                </div>
             </div>
         </div>
     </section>
     <section class="solution">
         <div class="arrow-inside">
-            <img class="arrow-big01" src="images/hukidasi-arrow big.png" alt="吹き出し部分大02">
+            <img class="arrow-big" src="images/hukidasi-arrow big.png" alt="吹き出し部分大02">
         </div>
         <div class="container solution-content__box">
             <div class="solution-content">
                 <div class="solution-content__text">
                     <h3><img src="images/solution-title01.png" alt="現役のデザイナーがいつでもサポート"></h3>
-                    <p>専門のスキルを持った、現役WEBデザイナーが付き<br> 未経験の方がスキルを習得するまで、<br> 成果達成に向けサポートいたします！<br> オンライン講座で学び、課題を通してスキルを定着<br> させていきます。<br> 質問や課題の提出など、365日受け付けているので<br> 安心して学習に取り組むことができます。</p>
+                    <p>専門のスキルを持った、現役WEBデザイナーが付き 未経験の方がスキルを習得するまで、成果達成に向けサポートいたします！オンライン講座で学び、課題を通してスキルを定着 させていきます。 質問や課題の提出など、365日受け付けているので 安心して学習に取り組むことができます。</p>
                 </div>
                 <div class="solution-content__img">
                     <img src="images/solution-img01.png" alt="サポートイメージ">
                 </div>
             </div>
             <div class="solution-content solucon02">
-                <div class="solution-content__img">
+                <div class="solution-content__img solution02-img">
                     <img src="images/solution-img02.png" alt="学習イメージ">
                 </div>
-                <div class="solution-content__text">
+                <div class="solution-content__text solution02-text">
                     <h3><img src="images/solution-title02.png" alt="実際の納品レベルまで一緒に作成"></h3>
-                    <p>デザインと同時進行で、コーディングの学習も進め<br> ていきます。<br> また、WEB制作の表現をより広げるjQueryなど<br> のプログラミング言語、Wordpressも学びます。<br> スキルを積み、最終的には、実際の依頼を想定し、<br> 納品する段階まで作成していきます！</p>
+                    <p>デザインと同時進行で、コーディングの学習も進め ていきます。 また、WEB制作の表現をより広げるjQueryなど のプログラミング言語、Wordpressも学びます。 スキルを積み、最終的には、実際の依頼を想定し、 納品する段階まで作成していきます！</p>
                 </div>
             </div>
             <div class="solution-content solucon03">
                 <div class="solution-content__text">
                     <h3><img src="images/solution-title03.png" alt="安心の価格！月額9900円から"></h3>
-                    <p>プログラミングスクールの会費は平均して非常に高<br> 額となっております。<br> OwnCreating Proは入会費0円、最短半年間の学<br> 習で¥180000から、分割払いの選択で月々9000 <br> 円から受講が可能です！<br> 無理のないお支払いで、安心して学習を進めていけ<br> ます。</p>
+                    <p>プログラミングスクールの会費は平均して非常に高 額となっております。 OwnCreating Proは入会費0円、最短半年間の学 習で¥180000から、分割払いの選択で月々9000  円から受講が可能です！ 無理のないお支払いで、安心して学習を進めていけ ます。</p>
                 </div>
                 <div class="solution-content__img">
                     <img src="images/solution-img03.png" alt="安心イメージ">
@@ -123,6 +157,9 @@
     <section class="skill section-box">
         <h2 class="sub-title container">
             <img src="images/subtitle03-skill.png" alt="身に付くスキル">
+        </h2>
+        <h2 class="sub-title__tublet">
+            <img src="images/tblet-subtitle03-skill.png" alt="こんな悩みを持った方にオススメです２">
         </h2>
         <div class="sub-comment__box">
             <p class="sub-comment">
@@ -148,9 +185,20 @@
     <section class="taiken">
     <div id="taiken-content">
         <div class="taiken-view"></div>
+        <div class="taiken-button">
+            <a href="#">無料体験を試してみる！</a>
+        </div>
     </div>
     <div id="taiken-tellbox" class="tell-box container">
-        <img src="images/tell.png" alt="お問い合わせ先">
+        <div class="tell-box__button">
+            <a href="#"><img src="images/shiryou-button.png" alt="今すぐ資料請求"></a>
+            <a href="#"><img src="images/toiawase-button.png" alt="メールでお問い合わせ"></a>
+        </div>
+        <div class="tell-box__text">
+            <p class="tell-number__descriptiom">お気軽にお問い合わせください</p>
+            <p class="tell-number"><i class="fas fa-phone-volume fa-fw"></i>0120-123-456</p>
+            <p class="tell-number__descriptiom">（平日10:00~18:00）</p>
+        </div>
     </div>
     </section>
 
@@ -180,11 +228,14 @@
 
     <section class="student-section">
             <div class="arrow-inside">
-                <img src="images/arrowbig white.png" alt="吹き出し部分">
+                <img class="arrow-big" src="images/arrowbig white.png" alt="吹き出し部分">
             </div>
             <div class="section-box">
                 <h2 class="sub-title container">
                     <img src="images/subtitle05 student.png" alt="受講生の声">
+                </h2>
+                <h2 class="sub-title__tublet">
+                    <img src="images/tublet-subtitle05-seito.png" alt="受講生の声２">
                 </h2>
                 <div class="sub-comment__box">
                     <p class="sub-comment__white">
@@ -196,21 +247,24 @@
                     <div class="student-contents__box student-down">
                         <img class="student-face" src="images/student-img01.png" alt="生徒１">
                         <img class="student-name" src="images/student-name.png" alt="生徒1">
-                        <p>もともとWEBとは無関係のところ<br> で働いていましたが、<br> Own Creating Proに通って、<br> いまはWEBデザイナーとして<br> 働いています！</p>
+                        <p>もともとWEBとは無関係のところ で働いていましたが、 Own Creating Proに通って、 いまはWEBデザイナーとして 働いています！
+                            <br>もともとWEBとは無関係のところ で働いていましたが、 Own Creating Proに通って、 いまはWEBデザイナーとして 働いています！</p>
                     </div>
                     <div class="student-contents__box">
                         <img class="student-face" src="images/student-img02.png" alt="生徒2">
                         <img class="student-name" src="images/student-name.png" alt="生徒2">
-                        <p>もともとWEBとは無関係のところ<br> で働いていましたが、<br> Own Creating Proに通って、<br> いまはWEBデザイナーとして<br> 働いています！</p>
+                        <p>もともとWEBとは無関係のところ で働いていましたが、 Own Creating Proに通って、 いまはWEBデザイナーとして 働いています！
+                            <br>もともとWEBとは無関係のところ で働いていましたが、 Own Creating Proに通って、 いまはWEBデザイナーとして 働いています！</p>
                     </div>
                     <div class="student-contents__box student-down">
                         <img class="student-face" src="images/student-img03.png" alt="生徒3">
                         <img class="student-name" src="images/student-name.png" alt="生徒3">
-                        <p>もともとWEBとは無関係のところ<br> で働いていましたが、<br> Own Creating Proに通って、<br> いまはWEBデザイナーとして<br> 働いています！</p>
+                        <p>もともとWEBとは無関係のところ で働いていましたが、 Own Creating Proに通って、 いまはWEBデザイナーとして 働いています！
+                            <br>もともとWEBとは無関係のところ で働いていましたが、 Own Creating Proに通って、 いまはWEBデザイナーとして 働いています！</p>
                     </div>
                 </div>
                 <div class="ale-illust">
-                    <img src="images/skill-girl-img.png" alt="スキル応援イメージ">
+                    <img src="images/student-illust.png" alt="生徒イメージ">
                 </div>
             </div>
     </section>
@@ -219,6 +273,9 @@
         <h2 class="sub-title container">
             <img src="images/subtitle06.png" alt="あなたらしい働き方を応援します">
         </h2>
+        <h2 class="sub-title__tublet">
+            <img src="images/tublet-subtitle-last.png" alt="あなたらしい働き方を応援します">
+        </h2>
         <div class="sub-comment__box">
             <p class="sub-comment">
                 ご登録、ご相談はこちらから！無料の資料請求、24時間受付中
@@ -226,7 +283,15 @@
             <img src="images/hukidashi-arrow.png" alt="吹き出し部分">
         </div>
         <div id="last-tellbox" class="tell-box container">
-            <img src="images/tell.png" alt="お問い合わせ先">
+            <div class="tell-box__button">
+                <a href="#"><img src="images/shiryou-button.png" alt="今すぐ資料請求"></a>
+                <a href="#"><img src="images/toiawase-button.png" alt="メールでお問い合わせ"></a>
+            </div>
+            <div class="tell-box__text">
+                <p class="tell-number__descriptiom">お気軽にお問い合わせください</p>
+                <p class="tell-number"><i class="fas fa-phone-volume fa-fw"></i>0120-123-456</p>
+                <p class="tell-number__descriptiom">（平日10:00~18:00）</p>
+            </div>
         </div>
         <div class="ale-illust last-illust">
             <img src="images/dash-img.png" alt="ダッシュ応援イメージ">
